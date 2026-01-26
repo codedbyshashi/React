@@ -6,9 +6,12 @@ import {useForm} from 'react-hook-form'
 
 function App() {
 
-  const {register,handleSubmit,watch,formState:{errors}} = useForm();
+  const {register,handleSubmit,reset,watch,formState:{errors}} = useForm();
   
-  const onSubmit = (data)=>(console.log(data));
+  const onSubmit = (data)=>{
+    console.log(data);
+    reset();
+  };
 
   
 
@@ -40,6 +43,7 @@ function App() {
       </label>
 
       <button>Submit</button>
+      <button type="button" onClick={()=>reset()}>reset</button>
       </form>
     </div>
   );
