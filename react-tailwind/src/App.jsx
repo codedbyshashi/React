@@ -1,15 +1,16 @@
 import React from 'react'
+import DarkModeToggle from './DarkModeToggle'
 
 function App() {
   return (
-    <div className='bg-gray-100 p-4'>
-      <ui className = 'list-none md:flex md:gap-4'>
-        <li className='bg-blue-500 p-2  m-2 rounded-lg'>Item1</li>
-        <li className='bg-blue-500 p-2  m-2 rounded-lg'>Item2</li>
-        <li className='bg-blue-500 p-2  m-2 rounded-lg'>Item3</li>
-      </ui>
+    <div className="min-h-screen bg-white text-black
+                    dark:bg-gray-900 dark:text-white p-4">
+      <DarkModeToggle />
+
+      <h1 className="text-2xl mt-4">
+        Dark mode should change background
+      </h1>
     </div>
-    
   )
 }
 
