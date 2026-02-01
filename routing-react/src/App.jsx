@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -7,11 +7,31 @@ import Contact from './Contact';
 function App() {
   return (
     <Router>
-      <Routes>
+      <div className='min-h-screen bg-gray-100'>
+      <nav className='bg-blue-700 p-4 '>
+        <ul className='flex justify-center space-x-5 font-medium text-2xl'>
+          <li><Link
+              className='text-white hover:text-yellow-300 font-medium transition duration-300' 
+              to="/">Home</Link></li>
+          <li><Link 
+          className='text-white hover:text-yellow-300 font-medium transition duration-300'              
+          to="/about">About</Link></li>
+          <li><Link 
+          className='text-white hover:text-yellow-300 font-medium transition duration-300'
+          to="/contact">Contact</Link></li>
+        </ul>
+      </nav>
+
+      <div className='container mx-auto py-10'>
+      <Routes >
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+
+      </div>
+      
+      </div>
     </Router>
   );
 }
