@@ -5,7 +5,7 @@ const CurrentLocation = () =>{
   const location = useLocation();
 
   return (
-    <h3>Current Path:{location.pathname}</h3>
+    <h3 className="container mx-auto py-4">Current Path:{location.pathname}</h3>
   );
 
 };
