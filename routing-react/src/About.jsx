@@ -10,13 +10,13 @@ function About(){
   }
 
 
- // js fuction we need to update manually but router hook renders automatically main use is manipute
-  const urlParams = new URLSearchParams(window.location.search);
+//  js fuction we need to update manually but router hook renders automatically main use is manipute
+//   const urlParams = new URLSearchParams(window.location.search);
 
 
-  const topicFromURL = urlParams.get("topic");
-  console.log("useSearchParam: ",topic);
-  console.log("URLSearchParam: ",topicFromURL);
+//   const topicFromURL = urlParams.get("topic");
+//   console.log("useSearchParam: ",topic);
+//   console.log("URLSearchParam: ",topicFromURL);
   
 
   // console.log(searchParams);
