@@ -1,5 +1,5 @@
 const intialState = {
-  count:10,
+  count:0,
 }
 
 const counterReducer =(state = intialState,action)=>{
